@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+label{
+  cursor: pointer;
+}
+.container-fluid img {
+  width: 220px;
+  margin-left: 20px;
+}
+.container-fluid {
+  height: 70px;
+}
+.input {
+  border-style: none;
+  border-bottom: solid 2px black;
+  border-collapse: collapse;
+  width: 380px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.input:focus {
+  outline: none;
+}
+.wrapper .searching {
+  position: relative;
+  right: 40px;
+}
+.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+.nav-item {
+  font-size: 13px;
+}
+.wrapper {
+  text-align: center;
+  margin-left: 100px;
+}
+#menu img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+}
+#menu {
+  height: 52px;
+  background-color: black;
+  position: relative;
+}
+#menu .li {
+  list-style: none;
+  float: right;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 50px;
+  position: relative;
+  border-left: 1px solid #c0c0c0;
+}
+#menu .sub > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.allmenu > ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel-item img {
+  width: max-content;
+  height: 550px;
+}
+
+.photo-review {
+  display: flex;
+  margin-top: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.photo-review .cards {
+  margin: 5px 15px 5px 15px;
+}
+.photo-review .cards .cards-list {
+  list-style: none;
+  padding: 0;
+}
+.photo-review .cards .cards-list img {
+  width: 100%;
+}
+.photo-review .cards .cards-list .card-name {
+  font-size: 12px;
+  font-weight: 900;
+  padding-top: 5px;
+}
+.photo-review .cards .cards-list .card-talking {
+  font-size: 12px;
+  color: gray;
+}
+.photo-review .cards .cards-list li #popup {
+  display: none;
+}
+.photo-review .cards .cards-list li #popup + label + div {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 100;
+}
+.photo-review .cards .cards-list li #popup + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 815px;
+  background: white;
+  z-index: 2;
+}
+.photo-review .cards .cards-list li #popup + label + div > label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+.photo-review .cards .cards-list li #popup + label + div > div > label {
+  position: absolute;
+  top: -15px;
+  right: -26px;
+  z-index: 2;
+  color: white;
+}
+.photo-review .cards .cards-list li #popup:checked + label + div {
+  display: block;
+}
+
+.modalbox > img {
+  width: 100%;
+  height: 490px;
+  display: flex;
+}
+.modalbox .modal-wrapper {
+  display: flex;
+}
+.modalbox .modal-leftbox {
+  width: 15%;
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+.modalbox .modal-leftbox .modal-item {
+  width: 85px;
+  height: 85px;
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.modalbox .modal-leftbox .modal-item img {
+  height: 100%;
+}
+.modalbox .modal-leftbox .modal-score {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: #787878;
+  font-size: 13px;
+}
+.modalbox .modal-leftbox .modal-star {
+  margin-left: auto;
+  margin-right: auto;
+}
+.modalbox .modal-rightbox {
+  width: 85%;
+  padding: 20px 20px 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.modalbox .modal-rightbox .modal-name {
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 11px;
+}
+.modalbox .modal-rightbox .modal-spexbox {
+  width: 100%;
+}
+.modalbox .modal-rightbox .modal-spexbox .modal-spex {
+  background-color: #f8f8f8;
+  list-style: none;
+  padding: 10px 20px 10px 20px;
+}
+.modalbox .modal-rightbox .modal-spexbox .modal-spex li {
+  padding: 5px 0px 5px 0px;
+  color: #484848;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+}
+.modalbox .modal-rightbox .modal-spexbox .modal-spex li span:nth-of-type(2) {
+  position: absolute;
+  left: 165px;
+  top: 4px;
+}
+.modalbox .modal-rightbox .modal-spexbox .modal-spex li span:nth-of-type(1) {
+  font-weight: 900;
+  color: black;
+}
+.modalbox .modal-rightbox .modal-talking {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+.modalbox .modal-rightbox .modal-recommend {
+  border-top: 1px solid gray;
+  padding-top: 11px;
+  color: red;
+  font-size: 13px;
+  font-weight: 900;
+}
+.modalbox .modal-rightbox .modal-recommend button {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 1px 10px 1px 10px;
+  font-weight: 900;
+}
+.plus button {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 225px;
+}
+.fas {
+  font-size: 30px;
+  vertical-align: center;
+  line-height: 50px;
+}
+#menu .sub .li .depth {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  padding-left: 5px;
+  left: 0px;
+  top: 50px;
+}
+.sub li:hover .depth {
+  /* depth 메뉴들 줄맞줘서 보여주기*/
+  display: block;
+  position: absolute;
+}
+.depth li:hover .depth2 {
+  display: inline-block; /* depth2 메뉴들 줄맞줘서 보여주기*/
+  position: absolute;
+  left: 100%; /*왼쪽 붙여주기*/
+}
+#final-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+#final-box div {
+  width: 30%;
+  position: relative;
+}
+#final-box img {
+  animation: slide 4s ease-out;
+  width: 100%;
+  position: relative;
+}
+
+.allmenu-list {
+  display: flex;
+  align-items: initial;
+  justify-content: space-evenly;
+  font-size: 12px;
+  position: relative;
+}
+.allmenu-list li {
+  list-style: none;
+}
+.allmenu-list div {
+  position: relative;
+}
+.allmenu-list li .allmenu-smlist {
+  position: absolute;
+  top: 22px;
+  left: -32px;
+}
+.allmenu-smlist a:hover,
+.allmenu-smsmlist a:hover {
+  border-bottom: 1px solid black;
+}
+.allmenu-smsmlist {
+  right: 20px;
+  position: relative;
+}
+.depth {
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  z-index: 100;
+  display: none;
+}
+.depth > li {
+  height: 30px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+}
+.depth > li > a,
+.depth2 > li > a {
+  text-decoration: none;
+  color: #c0c0c0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.depth2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 160px;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.depth2 li {
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.allmenu-list div {
+  border-bottom: 1px solid rgb(202, 202, 202);
+  width: 100px;
+  padding-bottom: 5px;
+}
+.allmenu-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.point {
+  color: black;
+  font-weight: 900;
+}
+
+@keyframes slide {
+  from {
+    left: -400px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    left: 0px;
+    opacity: 1;
+  }
+  to {
+    left: -400px;
+    opacity: 0;
+  }
+}
+#menuicon {
+  display: none;
+}
+#menuicon + label {
+  display: block;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 77px;
+}
+#menuicon + label > span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: white;
+  transition: all 0.35s;
+}
+#menuicon + label span:nth-child(1) {
+  top: 0;
+}
+#menuicon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menuicon + label span:nth-child(3) {
+  bottom: 0;
+}
+#menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: 2;
+}
+#menuicon:checked + label span:nth-child(2) {
+  z-index: 2;
+  opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  z-index: 2;
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.allmenu {
+  width: 100%;
+  height: 0;
+  background: white;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  z-index: 0;
+  transition: all 0.35s;
+}
+#menuicon:checked + label + div {
+  top: 52px;
+  height: 550px;
+  z-index: 4;
+}
