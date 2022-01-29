@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <!-- 제일 상단의 Nav -->
@@ -517,9 +518,9 @@
     </div>
 
     <br /><br />
-    
+
     <div style="text-align: center">
-      <p style="font-size: 35px;"><b>PHOTO REVIEW</b></p>
+      <p style="font-size: 35px"><b>PHOTO REVIEW</b></p>
       <p style="font-size: 20px">포토리뷰 작성 이벤트</p>
     </div>
 
@@ -572,9 +573,11 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
+                      <button type="button">결제하기</button>
+                      <button type="button">장바구니 담기</button>
                     </div>
                   </div>
                 </div>
@@ -641,7 +644,7 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
                     </div>
@@ -709,7 +712,7 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
                     </div>
@@ -773,7 +776,7 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
                     </div>
@@ -839,7 +842,7 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
                     </div>
@@ -905,7 +908,7 @@
                       <br />
                       신어보니 편해서 좋아요
                     </div>
-                    <div class="modal-recommend">
+                    <div class="modal-button">
                       <span>추천: 0</span>
                       <button type="button">추천하기</button>
                     </div>
@@ -934,66 +937,697 @@
     <br /><br /><br /><br />
 
     <!-- 포토 리뷰2 -->
-    <div id="final-box">
-      <div class="card-box">
-        <img src="5.jpg" />
-        <p style="font-size: 25px">
-          <br />
-          <b
-            >NATIONAL GEOGRAPHIC <br />
-            Global Family Story<br />
-            #3. 신학기 가방</b
-          >
-          <br />
-        </p>
-
-        <p style="font-size: 12px; color: gray">
-          내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기. "2022 New
-          School Bag"를 소개 합니다.
-        </p>
+    <div id="photo">
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #3. 신학기 가방<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기.<br />
+            "2022 New School Bag"를 소개 합니다.
+          </p>
+        </div>
       </div>
-      <div class="card-box">
-        <img src="6.jpg" />
-        <p style="font-size: 25px">
-          <br />
-          <b> 새로운 나를 가득 채우다!</b>
-          <br />
-        </p>
-
-        <p style="font-size: 12px; color: gray">
-          다가오는 신학기, 새로운 시작에 앞서 새 가방을 찾고 있다면
-          내셔널지오그래픽에서 준비한 22SS 신상 백팩을 눈여겨보세요! 디자인은
-          물론 기능까지 한층 더 업그레이드되어 더욱 설레는 신학기로 만들어줄
-          거예요.
-        </p>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="8.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            새로운 나를 가득 채우다!
+          </p>
+        </div>
+        <div>
+          <p>
+            다가오는 신학기, 새로운 시작에 앞서 새 가방을 찾고 있다면 내셔널지오그래픽에서 준비한 22SS 신상 백팩을 눈여겨보세요! 디자인은 물론 기능까지 한층 더 업그레이드되어 더욱 설레는 신학기로 만들어줄 거예요.
+          </p>
+        </div>
       </div>
-      <div class="card-box">
-        <img src="7.jpg" />
-        <p style="font-size: 25px">
-          <br />
-          <b> 70년대 클래식 조거를 재해석하다</b>
-          <br />
-        </p>
-
-        <p style="font-size: 12px; color: gray">
-          새 해가 다가오면서 이제 새 신을 준비해야할 때! 70년대 클래식 조거화를
-          현대적으로 재해석한 디자인에 폭신한 착화감으로 데일리 스니커즈로
-          제격인 라보카와 페리토를 만나보세요!
-        </p>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="13.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            70년대 클래식 조거를 재해석하다
+          </p>
+        </div>
+        <div>
+          <p>
+            새 해가 다가오면서 이제 새 신을 준비해야할 때! 70년대 클래식 조거화를 현대적으로 재해석한 디자인에 폭신한 착화감으로 데일리 스니커즈로 제격인 라보카와 페리토를 만나보세요!
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            헤어 & 바디케어 라인
+          </p>
+        </div>
+        <div>
+          <p>
+            액티브한 라이프 스타일을 책임지는 자연의 에너지가 가득 담긴 데일리 케어 라인입니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="9.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #2. 리머 플리스 리버시블 다운<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 두 번째 이야기. "리머 플리스 리버시블 다운"를 소개 합니다
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="13.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            고민 없이 고르는 '요즘' 아우터
+          </p>
+        </div>
+        <div>
+          <p>
+            어느덧 계절의 방향은 겨울로 기울어가고 있습니다. 부쩍 추워진 날씨에 매일 아침 입고 나갈 아우터가 고민이라면, 보온성과 스타일을 모두 겸비한 아우터 아이템을 주목하세요. 8인의 인플루언서들과 함께한 내셔널지오그래픽 아우터 데일리 스타일링을 소개합니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #3. 신학기 가방<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기.<br />
+            "2022 New School Bag"를 소개 합니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #3. 신학기 가방<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기.<br />
+            "2022 New School Bag"를 소개 합니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #3. 신학기 가방<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기.<br />
+            "2022 New School Bag"를 소개 합니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <div>
+            <input type="checkbox" id="popup" />
+            <label for="popup"><img src="10.jpg" /></label>
+            <div>
+              <!-- 모달창 -->
+              <div class="modalbox">
+                <label for="popup"><i class="fas fa-times"></i></label>
+                <img src="12.jpg" />
+                <div class="modal-wrapper">
+                  <div class="modal-leftbox">
+                    <div class="modal-item">
+                      <a href="#"><img src="12.jpg" /></a>
+                    </div>
+                    <div class="modal-score">
+                      <div>
+                        <span
+                          >평가 <strong style="color: red">4.8</strong></span
+                        >
+                        <span>리뷰 <strong style="color: red">78</strong></span>
+                      </div>
+                    </div>
+                    <div class="modal-star" style="color: yellow">★★★★★</div>
+                  </div>
+                  <div class="modal-rightbox">
+                    <div class="modal-name">
+                      내셔널지오그래픽 신발 N211AFW150 다이브 플러스 V2 슬리퍼
+                      BLACK
+                    </div>
+                    <div class="modal-spexbox">
+                      <ul class="modal-spex">
+                        <li class="height"><span>키</span><span>170</span></li>
+                        <li class="weight">
+                          <span>몸무게</span><span>65</span>
+                        </li>
+                        <li class="color">
+                          <span>COLOR</span><span>BLACK</span>
+                        </li>
+                        <li class="size"><span>SIZE</span><span>260</span></li>
+                      </ul>
+                    </div>
+                    <div class="modal-talking">
+                      제가 볼이 넓은편인데 잘맞네요.
+                      <br />
+                      신어보니 편해서 좋아요
+                    </div>
+                    <div class="modal-button">
+                      <span>추천: 0</span>
+                      <button type="button">추천하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="popup"></label>
+            </div>
+        </div>
+        <div>
+          <p>
+            NATIONAL GEOGRAPHIC<br />
+            Global Family Story <br />
+            #3. 신학기 가방<br />
+          </p>
+        </div>
+        <div>
+          <p>
+            내셔널지오그래픽 글로벌 패밀리가 함께한 세 번째 이야기.<br />
+            "2022 New School Bag"를 소개 합니다.
+          </p>
+        </div>
       </div>
     </div>
   </body>
   <script>
-    function change1() {
-      var elems = document.getElementsByClassName("allmenu");
-      for (var i = 0; i < elems.length; i += 1) {
-        if ((elems[i].style.display = "none")) {
-          elems[i].style.display = "block";
-        } else if ((elems[i].style.display = "block")) {
-          elems[i].style.display = "none";
-        }
-      }
-    }
     let image = document.querySelectorAll(".card-box img");
 
     window.addEventListener("scroll", function () {
